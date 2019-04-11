@@ -1,0 +1,225 @@
+/*
+  サイト全体のレイアウト
+*/
+html {
+  font-size: 62.5%;
+  line-height: 150%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  background: #fff;
+}
+li {
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a{
+  color: #B8272B;
+}
+
+.globalHeader {
+  padding: 10px 0;
+  background: #fff;
+  border-bottom: solid 4px #4490C3;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 2;
+}
+.globalHeader .navigation{
+  margin-top: 10px;
+}
+.globalHeader .navigation li{
+  display: inline-block;
+}
+.globalHeader .navigation li+li{
+  margin-left: 5px;
+}
+.globalFooter {
+  text-align: center;
+  color: #fff;
+  background: #383838;
+}
+.content{
+  padding: 40px 0;
+  background: #fff;
+  color: #666;
+}
+.inner_m {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.ttl_a {
+  font-size: 2.8rem;
+  line-height: 1.6;
+  color: #8a4e13;
+}
+.ttl_b {
+  margin: 40px 0 20px 0;
+  padding: 0 20px;
+  font-size: 1.8rem;
+  line-height: 2;
+  color: #154D7B;
+  background: #e6eef2;
+}
+.goUp {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+}
+.goUp img{
+  width: 100px;
+  height: auto;
+  opacity: 0.8;
+}
+
+/*
+  ページ固有のレイアウト
+*/
+body.top .sliderBackground{
+  background: #247DB7;
+  padding: 0 30px;
+  box-sizing: border-box;
+  border-bottom: solid 4px #4490C3;
+}
+body.top .slider img{
+  width: 100%;
+  height: auto;
+  max-width: 980px;
+}
+body.top .news {
+  margin-top: 20px;
+  padding: 10px 20px;
+  height: 130px;
+  overflow: scroll;
+  border: 1px solid #eee;
+}
+body.top .news li{
+  border-bottom: 1px dotted #ccc;
+}
+body.top .tv {
+  margin-top: 20px;
+  text-align: center;
+}
+body.top .tv li+li{
+  margin-top: 10px;
+}
+body.top .blog li{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body.top .blog li+li{
+  margin-top: 10px;
+}
+body.top .blog .thumb{
+  display: block;
+  width: 30%;
+}
+body.top .blog .excerpt{
+  width: 68%;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+@media screen and (min-width: 768px) {
+  body {
+    min-width: 1020px;
+  }
+  a:hover {
+    opacity: 0.6;
+    transition: 0.5s;
+  }
+  .globalHeader {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 2;
+    padding: 0;
+  }
+  .globalHeader .wrapper{
+    width: 940px;
+    margin: auto;
+    padding: 10px 0;
+    position: relative;
+  }
+  .globalHeader .navigation{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .globalHeader .navigation li{
+    display: block;
+    float: left;
+  }
+  .globalHeader .navigation li+li{
+    margin-left: 2px;
+  }
+  .globalHeader .navigation li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 3px 20px;
+  }
+  .content {
+    padding: 80px 0 160px 0;
+  }
+  .inner_m {
+    width: 940px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ttl_a {
+    font-size: 4rem;
+    line-height: 1.6;
+  }
+  .ttl_b {
+    font-size: 2rem;
+    line-height: 2;
+  }
+  .goUp {
+    bottom: 30px;
+    right: 15px;
+  }
+  .goUp img{
+    width: 180px;
+  }
+
+  body.top .tv li{
+    float: left;
+    width: 32%;
+  }
+  body.top .tv li+li{
+    margin-top: 0;
+    margin-left: 2%;
+  }
+  body.top .blog{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body.top .blog li{
+    width: 13%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  body.top .blog li+li{
+    margin-top: 0;
+  }
+  body.top .blog .thumb{
+    width: 100%;
+  }
+  body.top .blog .excerpt{
+    width: 100%;
+  }
+}

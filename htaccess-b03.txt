@@ -1,0 +1,4 @@
+# mod_deflate(gzip圧縮配信)の設定
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>
