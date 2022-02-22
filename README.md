@@ -4,10 +4,9 @@
 
 ## 著者からのおしらせ
 ### Windows用画像圧縮ソフトウェア「Antelope」について  
-2019年4月26日現在、「Antelope」のダウンロードページにアクセスするとエラーが発生し、ソフトウェアをダウンロードできない状況です。  
-
-下記、Vectorウェブサイトよりダウンロードください。  
-[Voralent Antelopeの詳細情報 : Vector ソフトを探す！](https://www.vector.co.jp/soft/winnt/art/se506994.html)
+2022年2月22日現在、「Antelope」のダウンロードページのURLが変更になっております。  
+下記のURLよりダウンロードください。  
+[https://boldright.co.jp/products/antelope/](https://boldright.co.jp/products/antelope/)
 
 ### 画像圧縮結果について
 画像圧縮後のファイル容量は、使用するソフトや設定によって異なります。  
